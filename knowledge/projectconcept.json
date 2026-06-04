@@ -1,0 +1,527 @@
+{
+  "project_name": "Bridge Work Process Mapping Lab",
+  "working_title": "Process Mapping Lab",
+  "project_type": "Prompt-based AI adoption and process documentation lab",
+  "status": "content and UX prototype",
+  "one_sentence_concept": "A lightweight lab that helps non-technical teams learn process thinking, choose the right mapping perspective, map real workflows, and store process knowledge as portable assets before adopting AI or automation.",
+  "core_thesis": "AI adoption starts with process clarity. Teams do not need to become BPMN professionals, but they need enough process literacy to understand work before they automate it.",
+  "strategic_positioning": {
+    "bridge_work_fit": "This lab fits Bridge Work as a practical tool for AI Adoption Architecture, governance-aware transformation, process literacy, and operational readiness.",
+    "main_message": "Map the work. Then adopt the tool.",
+    "supporting_message": "Process knowledge should survive the tool. That is part of exit strategy.",
+    "anti_pattern": "Do not automate chaos. Do not build AI workflows on undocumented, poorly understood processes.",
+    "target_audience": [
+      "non-technical business users",
+      "change managers",
+      "AI adoption leads",
+      "M365 / Copilot adoption teams",
+      "public-sector and regulated organisations",
+      "teams preparing automation or AI use cases"
+    ]
+  },
+  "product_narrative": {
+    "short_version": "Learn the symbols with Pietro. Choose the lens with Carla. Map the real work with the Sparring Partner. Store the knowledge with the Librarian.",
+    "expanded_version": "The lab starts with playful BPMN literacy, then teaches the hardest part of process mapping: choosing the right perspective. Once the perspective is clear, the user maps a real workflow and stores the result as portable organisational knowledge.",
+    "learning_arc": [
+      {
+        "step": 1,
+        "name": "Learn",
+        "module": "Pietro Pizzaiolo",
+        "purpose": "Teach the beginner process language through a gamified pizza metaphor."
+      },
+      {
+        "step": 2,
+        "name": "Choose",
+        "module": "Kaleidoskop Carla",
+        "purpose": "Help the user choose the right process, mapping goal, boundary and perspective."
+      },
+      {
+        "step": 3,
+        "name": "Map",
+        "module": "Process Sparring Partner",
+        "purpose": "Turn a messy real workflow into a structured process map with AI opportunities and governance questions."
+      },
+      {
+        "step": 4,
+        "name": "Store",
+        "module": "Process Librarian",
+        "purpose": "Turn the map into portable process documentation: Markdown, Mermaid and JSON metadata."
+      }
+    ]
+  },
+  "key_principles": [
+    {
+      "principle": "Validation over validation checking",
+      "meaning": "A useful process map does not need to be perfect BPMN. It needs to be true enough for the people doing the work."
+    },
+    {
+      "principle": "As-is before should-be",
+      "meaning": "Map the real process before designing the ideal process or automation."
+    },
+    {
+      "principle": "Perspective before diagram",
+      "meaning": "The same process can be mapped through different lenses. Choose the lens before drawing."
+    },
+    {
+      "principle": "No mega-diagrams",
+      "meaning": "One diagram should not show user experience, worker tasks, data flow, system architecture, governance and automation logic all at once."
+    },
+    {
+      "principle": "BPMN concepts, not BPMN gatekeeping",
+      "meaning": "Use BPMN as a thinking language, not as a certification exercise."
+    },
+    {
+      "principle": "Mermaid first, portable always",
+      "meaning": "Use Mermaid for lightweight, text-based process diagrams that can render in chat, documentation systems or a viewer."
+    },
+    {
+      "principle": "Process knowledge is exit strategy",
+      "meaning": "If the process only lives inside one AI tool or vendor UI, the organisation is locked in. Portable process assets preserve optionality."
+    }
+  ],
+  "beginner_bpmn_palette": {
+    "recommended_elements": [
+      {
+        "element": "Start event",
+        "plain_language": "Where the process begins",
+        "mermaid_shape": "A([\"Start: ...\"])"
+      },
+      {
+        "element": "Task",
+        "plain_language": "A concrete action",
+        "mermaid_shape": "B[\"Verb + Noun\"]"
+      },
+      {
+        "element": "Sequence flow",
+        "plain_language": "What happens next",
+        "mermaid_shape": "A --> B"
+      },
+      {
+        "element": "End event",
+        "plain_language": "Where the process ends",
+        "mermaid_shape": "Z([\"End: ...\"])"
+      },
+      {
+        "element": "Exclusive gateway",
+        "plain_language": "A yes/no or either/or decision",
+        "mermaid_shape": "C{\"Question?\"}"
+      },
+      {
+        "element": "Actor / swimlane",
+        "plain_language": "Who owns or performs the work",
+        "mermaid_shape": "subgraph ActorName [Actor / Team]"
+      }
+    ],
+    "avoid_initially": [
+      "complex gateways",
+      "inclusive gateways",
+      "intermediate timer events",
+      "message events",
+      "signal events",
+      "boundary events",
+      "service tasks",
+      "script tasks",
+      "formal BPMN XML",
+      "collapsed subprocesses"
+    ],
+    "labeling_rules": {
+      "tasks": "Use Verb + Noun, for example: Review invoice, Approve request, Send confirmation.",
+      "events": "Use Noun + State, for example: Application received, Request completed, Invoice rejected.",
+      "decisions": "Use clear questions, for example: Is request complete?"
+    }
+  },
+  "module_definitions": {
+    "pietro_pizzaiolo": {
+      "name": "Pietro Pizzaiolo",
+      "module_type": "Learning prompt",
+      "role": "Friendly BPMN tutor",
+      "metaphor": "Pizza recipe as process map",
+      "tagline": "Learn the symbols. BPMN through pizza.",
+      "purpose": "Teach beginner process literacy through a playful, gamified metaphor.",
+      "user_start_signal": "I am new to process mapping.",
+      "learning_levels": [
+        {
+          "level": 1,
+          "name": "Margherita",
+          "concept": "Simple linear process",
+          "bpmn_elements": [
+            "start",
+            "task",
+            "sequence flow",
+            "end"
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Hawaii",
+          "concept": "Decision logic and branching",
+          "bpmn_elements": [
+            "exclusive gateway",
+            "conditional path"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Four Cheese",
+          "concept": "Parallel work and subprocess thinking",
+          "bpmn_elements": [
+            "parallel work",
+            "actor coordination"
+          ]
+        }
+      ],
+      "outputs": [
+        "short explanation",
+        "Mermaid diagram",
+        ".mmd content",
+        "fallback link instruction",
+        "learning summary",
+        "handoff to Carla"
+      ],
+      "handoff_message": "You now know how maps are drawn. Next, we need to choose what kind of map we need. A process map is not neutral. It is a view."
+    },
+    "kaleidoskop_carla": {
+      "name": "Kaleidoskop Carla",
+      "module_type": "Lens selection prompt",
+      "role": "Process perspective guide",
+      "metaphor": "Kaleidoscope: the same object looks different depending on the lens",
+      "tagline": "Choose the lens before drawing the map.",
+      "purpose": "Help the user choose the right process, mapping goal, boundary and perspective before any diagram is drawn.",
+      "user_start_signal": "I already have a process, but I am unsure how to map it.",
+      "core_principle": "A process map is not neutral. It is a view.",
+      "diagnostic_question": "What is the single biggest headache or goal driving this mapping initiative right now?",
+      "lens_options": [
+        {
+          "lens": "worker_experience",
+          "question": "What does the person doing the work actually do?",
+          "use_when": [
+            "manual work",
+            "context switching",
+            "hidden effort",
+            "adoption barriers",
+            "employee frustration"
+          ]
+        },
+        {
+          "lens": "end_user_experience",
+          "question": "How does the requester or customer experience the process?",
+          "use_when": [
+            "waiting",
+            "complaints",
+            "drop-off",
+            "unclear communication",
+            "service quality"
+          ]
+        },
+        {
+          "lens": "decision_accountability",
+          "question": "Who decides what, when and based on which evidence?",
+          "use_when": [
+            "approvals",
+            "unclear ownership",
+            "escalation",
+            "bottlenecks",
+            "AI decision boundaries"
+          ]
+        },
+        {
+          "lens": "data_knowledge_flow",
+          "question": "What information is needed, created, checked, stored or reused?",
+          "use_when": [
+            "data quality",
+            "duplicates",
+            "source of truth",
+            "tribal knowledge",
+            "RAG readiness",
+            "documentation"
+          ]
+        },
+        {
+          "lens": "system_application_flow",
+          "question": "Which tools and systems are involved?",
+          "use_when": [
+            "integrations",
+            "APIs",
+            "legacy systems",
+            "Power Automate",
+            "agent workflows"
+          ]
+        },
+        {
+          "lens": "governance_risk_flow",
+          "question": "Where do privacy, security, approval, auditability and human review matter?",
+          "use_when": [
+            "risk",
+            "compliance",
+            "privacy",
+            "security",
+            "audit",
+            "regulated environments"
+          ]
+        },
+        {
+          "lens": "ai_adoption_flow",
+          "question": "Where could AI safely assist, draft, classify, summarize, route, automate or decide?",
+          "use_when": [
+            "AI adoption",
+            "automation readiness",
+            "Copilot",
+            "agents",
+            "ChatGPT",
+            "save time"
+          ]
+        }
+      ],
+      "outputs": [
+        "process choice",
+        "mapping goal",
+        "primary lens",
+        "secondary lenses",
+        "map boundary",
+        "what to include",
+        "what not to map yet",
+        "handoff brief for Process Sparring Partner"
+      ]
+    },
+    "process_sparring_partner": {
+      "name": "Process Sparring Partner",
+      "module_type": "Real process mapping prompt",
+      "role": "Structured process interviewer and mapper",
+      "tagline": "Turn messy real work into a usable map.",
+      "purpose": "Map the real as-is workflow using the chosen lens and identify AI opportunities, risks and governance questions.",
+      "user_start_signal": "I have a process and perspective and need a first real map.",
+      "mapping_sequence": [
+        "chronological narrative",
+        "actors / swimlanes",
+        "start and end",
+        "happy path",
+        "decisions",
+        "exceptions",
+        "systems and data annotations",
+        "AI / automation candidates",
+        "governance and exit strategy notes",
+        "Mermaid output"
+      ],
+      "guardrails": [
+        "Do not immediately generate a diagram if the process story is unclear.",
+        "If the user cannot describe the process as a chronological story, ask clarifying questions before mapping.",
+        "Do not overload one diagram with every perspective.",
+        "If the map exceeds 15 steps, suggest splitting it into parent and child maps or separate perspectives."
+      ],
+      "ai_opportunity_types": [
+        "assist",
+        "draft",
+        "summarize",
+        "classify",
+        "search",
+        "recommend",
+        "route",
+        "automate",
+        "decide"
+      ],
+      "governance_rule": "Mark 'decide' as high governance sensitivity unless the decision is clearly low-risk and reversible.",
+      "outputs": [
+        "process summary",
+        "perspective used",
+        "Mermaid diagram",
+        ".mmd file content",
+        "roles and responsibilities",
+        "decision points",
+        "data and knowledge objects",
+        "pain points",
+        "AI opportunities",
+        "governance questions",
+        "exit strategy notes",
+        "open assumptions",
+        "recommended next steps"
+      ]
+    },
+    "process_librarian": {
+      "name": "Process Librarian",
+      "module_type": "Process documentation and storage prompt",
+      "role": "Portable process knowledge archivist",
+      "tagline": "Turn process maps into organisational memory.",
+      "purpose": "Turn process maps into durable, file-based, vendor-agnostic process documentation.",
+      "user_start_signal": "I have a map and want to store it as reusable process knowledge.",
+      "outputs": [
+        "Markdown process record",
+        "Mermaid diagram",
+        ".mmd file content",
+        "JSON metadata",
+        "suggested filename",
+        "suggested folder location",
+        "review checklist",
+        "AI adoption notes",
+        "exit strategy notes"
+      ],
+      "file_outputs": [
+        "/processes/draft/[slug].md",
+        "/processes/draft/[slug].mmd",
+        "/processes/draft/[slug].json"
+      ],
+      "strategic_role": "Ensures process knowledge does not live only inside a vendor tool, chat interface or proprietary agent builder."
+    }
+  },
+  "mermaid_contract": {
+    "purpose": "Make all diagrams renderable in chat, reusable as files and viewable in fallback tools.",
+    "rules": [
+      "Always provide a Mermaid code block in the chat using ```mermaid.",
+      "Always provide reusable .mmd file content using ```text.",
+      "Always include fallback instruction: If your chat does not render Mermaid, copy the .mmd block into https://mermaid.live/.",
+      "Use flowchart TD for readable human process maps.",
+      "Use flowchart LR for compact overview maps.",
+      "Use subgraph blocks to represent actor lanes when useful.",
+      "Use only consistent beginner shapes unless advanced mode is requested.",
+      "Keep node labels short, ideally under five words.",
+      "Quote display strings to avoid parsing issues.",
+      "If the map exceeds 15 steps, suggest splitting into parent and child maps or multiple perspectives."
+    ],
+    "shape_rules": {
+      "start_end": "A([\"Start: ...\"])",
+      "task": "B[\"Verb + Noun\"]",
+      "decision": "C{\"Question?\"}",
+      "flow": "A --> B",
+      "actor_lane": "subgraph Actor [Actor / Team]"
+    }
+  },
+  "process_library_concept": {
+    "purpose": "A file-based process library that stores organisational process knowledge in portable, reviewable and versionable formats.",
+    "folder_structure": {
+      "root": "process-mapping-lab/",
+      "folders": [
+        "prompts/",
+        "schema/",
+        "processes/draft/",
+        "processes/active/",
+        "processes/archived/",
+        "examples/",
+        "viewer/"
+      ],
+      "files": [
+        "README.md",
+        "prompts/01-pietro-pizzaiolo.md",
+        "prompts/02-kaleidoskop-carla.md",
+        "prompts/03-process-sparring-partner.md",
+        "prompts/04-process-librarian.md",
+        "schema/process.schema.json",
+        "viewer/index.html",
+        "viewer/processes.json",
+        "viewer/app.js"
+      ]
+    },
+    "viewer_features": [
+      "process cards",
+      "filter by status",
+      "filter by perspective",
+      "filter by owner",
+      "filter by system",
+      "filter by automation readiness",
+      "filter by governance sensitivity",
+      "Mermaid rendering",
+      "copy Mermaid",
+      "copy JSON metadata",
+      "open review prompt"
+    ]
+  },
+  "process_metadata_schema_draft": {
+    "id": "string",
+    "title": "string",
+    "status": "draft | active | archived",
+    "owner": "string | TBD",
+    "domain": "string",
+    "primary_perspective": "worker_experience | end_user_experience | decision_accountability | data_knowledge_flow | system_application_flow | governance_risk_flow | ai_adoption_flow",
+    "secondary_perspectives": [
+      "string"
+    ],
+    "tags": [
+      "string"
+    ],
+    "roles": [
+      "string"
+    ],
+    "systems": [
+      "string"
+    ],
+    "data_objects": [
+      "string"
+    ],
+    "risks": [
+      "string"
+    ],
+    "ai_opportunity_types": [
+      "assist | draft | summarize | classify | search | recommend | route | automate | decide"
+    ],
+    "automation_readiness": "low | medium | high",
+    "data_readiness": "low | medium | high",
+    "governance_sensitivity": "low | medium | high",
+    "human_review_required": "boolean",
+    "fallback_human_role": "string",
+    "vendor_dependency": "low | medium | high",
+    "exit_strategy_value": "low | medium | high",
+    "source_of_truth": "string",
+    "created": "YYYY-MM-DD",
+    "updated": "YYYY-MM-DD",
+    "last_reviewed": "YYYY-MM-DD",
+    "review_owner": "string",
+    "version": "string"
+  },
+  "ux_direction": {
+    "desired_feel": "Apple-like, minimal, calm, premium, app-like, Bridge Work wrapper later.",
+    "first_view_goal": "Within one eyesight, the user should understand what they get and where to start.",
+    "navigation_principle": "Avoid competing navigation. Use one primary start path and a clean module app.",
+    "interaction_layers": [
+      "hero / value proposition",
+      "start selector",
+      "module app",
+      "module concept",
+      "user flow",
+      "expected output",
+      "hidden prompt engine"
+    ],
+    "current_prototype": "Apple-like prototype v7",
+    "prototype_file": "bridge-work-process-mapping-lab-apple-prototype-v7.html"
+  },
+  "research_inputs_used": {
+    "source": "Gemini research provided by user",
+    "key_findings": [
+      "Use a beginner BPMN palette to avoid cognitive overload.",
+      "Avoid advanced BPMN elements initially.",
+      "Use validation over validation checking.",
+      "Start with narrative before drawing.",
+      "Use swimlanes to clarify ownership and handoffs.",
+      "Use XOR gateways only at beginner level.",
+      "Map as-is before should-be.",
+      "Avoid the mega-diagram trap.",
+      "Use Mermaid as lightweight diagram-as-code.",
+      "Store process maps as portable Markdown, Mermaid and JSON.",
+      "Portable process documentation supports AI vendor exit strategy."
+    ]
+  },
+  "next_steps": [
+    {
+      "step": 1,
+      "task": "Upgrade prompts using the Gemini research findings.",
+      "output": "Four stronger prompt files."
+    },
+    {
+      "step": 2,
+      "task": "Create process.schema.json.",
+      "output": "Initial process metadata schema."
+    },
+    {
+      "step": 3,
+      "task": "Create one full example: AI Use Case Intake.",
+      "output": "Markdown, Mermaid and JSON process files."
+    },
+    {
+      "step": 4,
+      "task": "Create simple process viewer.",
+      "output": "HTML viewer rendering process cards and Mermaid diagrams."
+    },
+    {
+      "step": 5,
+      "task": "Bring prototype into final Bridge Work design wrapper.",
+      "output": "Premium Apple-like Bridge Work Lab web app."
+    }
+  ]
+}
