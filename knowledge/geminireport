@@ -1,0 +1,190 @@
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "reportTitle": "Enterprise Process Architecture, AI Adoption Readiness, and Sovereign Knowledge Management Report",
+  "generationDate": "2026-06-04",
+  "targetAudience": "LLM Core Context / Enterprise Architects",
+  "executiveSummary": "A unified plain-text framework for balancing BPMN business usability, light-weight Markdown/Mermaid process modeling, file-based repository governance, and risk-mitigated AI vendor exit strategies.",
+  
+  "section1_bpmn_fundamentals_for_business": {
+    "essentialBeginnerPalette": [
+      { "element": "Pools & Swimlanes", "purpose": "Track functional ownership and handoffs across boundaries." },
+      { "element": "Abstract Tasks", "purpose": "Represent action steps without imposing technical execution mechanics." },
+      { "element": "Sequence Flows", "purpose": "Establish chronologically ordered operational paths." },
+      { "element": "Start & End Events", "purpose": "Define clear process triggers and successful/unsuccessful outcomes." },
+      { "element": "Exclusive (XOR) Gateways", "purpose": "Enforce clear, binary yes/no branching logic." }
+    ],
+    "elementsToAvoidInitially": [
+      "Complex / Inclusive (OR) Gateways",
+      "Asynchronous Boundary Events (Message, Signal, Timer)",
+      "Technical Task Types (Service, Script, Send/Receive)",
+      "Collapsed/Expanded Sub-processes"
+    ],
+    "teachingSequence": {
+      "phase1": "Narrative (Linear bullet points detailing the chronological story without shapes)",
+      "phase2": "Layout (Placing structural actions into explicit organizational Swimlanes)",
+      "phase3": "Boundaries (Anchoring the stream with defined Start and End events)",
+      "phase4": "Logic (Introducing Exclusive Gateways to handle fundamental forks)",
+      "phase5": "Optimization (Annotating current systems to identify data and automation gaps)"
+    },
+    "governanceGoldenRule": "Validation over Validation Checking. A syntactically imperfect diagram matching business reality outperforms a compliant BPMN model mapping a fiction. Enforce strict labeling conventions: Verb + Noun for tasks, Noun + State for events."
+  },
+
+  "section2_automation_readiness_and_ai_identification": {
+    "readinessIndicators": {
+      "highAutomationPotential": "Linear, predictable, repetitive sequences utilizing structured inputs and explicit XOR decisions.",
+      "lowAutomationPotential": "High-variability sequences, lack of standardized rules, and heavily unmapped exception paths."
+    },
+    "aiUseCaseDiscoveryMatrix": [
+      {
+        "bpmnPattern": "High-Volume Manual Tasks",
+        "significance": "Data entry, routine manipulation, and screen-toggling across legacy windows.",
+        "idealAiFit": "Robotic Process Automation (RPA) combined with Intelligent Document Processing (IDP)."
+      },
+      {
+        "bpmnPattern": "Complex Decision Gateways",
+        "significance": "Steps requiring human judgment based on messy historical datasets or policies.",
+        "idealAiFit": "Predictive Machine Learning or LLM classification networks acting as an advisor."
+      },
+      {
+        "bpmnPattern": "Unstructured Inputs / Start Events",
+        "significance": "Inbound customer emails, conversational audio, or unformatted PDF attachments.",
+        "idealAiFit": "Generative AI pipelines for intent extraction, summarization, and automated drafting."
+      },
+      {
+        "bpmnPattern": "Repeated Compliance Hand-offs",
+        "significance": "Information moving through multiple administrative lanes solely for verification checks.",
+        "idealAiFit": "Agentic AI workflows orchestrating background validation actions autonomously."
+      }
+    ],
+    "commonPreAutomationMistakes": [
+      "Automating the Chaos: Coding broken, unoptimized processes to accelerate error generation rates.",
+      "Mapping the 'Should-Be' Instead of the 'As-Is': Overlooking real-world employee workarounds and undocumented exception paths.",
+      "Ignoring Unstructured Data Boundaries: Failing to account for input format variations that crash deterministic bots."
+    ]
+  },
+
+  "section3_process_perspectives_lenses": {
+    "lensDirectory": {
+      "customerExperience": {
+        "whenToUse": "Digital transformation, product design, and front-office optimization optimization.",
+        "keyQuestions": ["What are customer friction points?", "Where is the customer forced to wait?", "What channels do they traverse?"],
+        "omits": ["Internal organizational handoffs", "Database architecture", "Backend manual adjustments"]
+      },
+      "workerExperience": {
+        "whenToUse": "Change management, operational training design, high-turnover analysis, and employee morale audits.",
+        "keyQuestions": ["What steps drain operational time?", "Where are context switches required?", "What tasks frustrate the team?"],
+        "omits": ["External customer sentiment", "Underlying network topology", "Granular compliance regulation codes"]
+      },
+      "decisionAccountability": {
+        "whenToUse": "RACI Matrix optimization, bottleneck resolution, and authority delegation reviews.",
+        "keyQuestions": ["Who has final sign-off authority?", "What clear criteria guide this decision?", "Where are approvals piling up?"],
+        "omits": ["Granular data schemas", "Interface user experience", "Background automated automation steps"]
+      },
+      "dataKnowledgeFlow": {
+        "whenToUse": "Data governance frameworks, Business Intelligence setup, and institutional training design.",
+        "keyQuestions": ["What exact information is required here?", "Where is tribal knowledge hidden?", "Where is data duplicated?"],
+        "omits": ["Software application names", "Customer emotional curves", "Physical office environments"]
+      },
+      "systemApplication": {
+        "whenToUse": "Enterprise architecture alignment, API integration maps, and legacy decommissioning initiatives.",
+        "keyQuestions": ["Which databases are called?", "Where are the synchronous APIs?", "What legacy tools are active?"],
+        "omits": ["Human rationale behind actions", "Visual customer touchpoints", "Manual decision parameters"]
+      },
+      "governanceRiskCompliance": {
+        "whenToUse": "Audit preparations, security assessments, and regulated industry process monitoring.",
+        "keyQuestions": ["Where are separation-of-duty flaws?", "Where are privacy controls located?", "Is operational data encrypted?"],
+        "omits": ["Happy-path throughput efficiency", "Speed of delivery indexes", "Employee tool frustrations"]
+      },
+      "automationAiAdoption": {
+        "whenToUse": "Identifying specific candidate tasks for RPA, GenAI, or autonomous LLM agent execution.",
+        "keyQuestions": ["Which tasks require human cognitive evaluation?", "Where is text unstructured?", "Is the input data predictable?"],
+        "omits": ["Macro corporate strategy", "Deep infrastructural network maps", "Customer emotional attributes"]
+      }
+    },
+    "selectionRules": {
+      "threeQuestionRule": {
+        "q1": "Who is the ultimate audience?",
+        "q2": "What is the immediate operational problem we are solving?",
+        "q3": "What phase of the project lifecycle are we currently executing?"
+      },
+      "antiOverloadDirectives": [
+        "The Layering Rule: Limit any single diagram canvas to a maximum of three distinct token types (e.g., Actor + Task + System).",
+        "Sub-processes as Links: Abstract high-density operational steps using hyperlinked, collapsed child diagrams."
+      ]
+    },
+    "repositoryArchitecture3Tier": {
+      "level1": "Value Chain / Core Business Process (Overarching lifecycle block views; zero technical data)",
+      "level2": "Strategic & Operational Views (Parallel Outside-In Customer Maps matching Inside-Out Worker BPMN)",
+      "level3": "Specialized Overlays (Child technical system views, compliance checklists, and prompt configurations)"
+    }
+  },
+
+  "section4_lightweight_diagramming_via_mermaid": {
+    "strengths": [
+      "Zero-maintenance architecture via simple text updates inline inside markdown systems.",
+      "Git-native tracking of process logic updates using standard file diff tools.",
+      "High compatibility with continuous delivery documentation software pipelines."
+    ],
+    "limits": [
+      "Lacks the precise semantic vocabulary required for enterprise-scale BPMN runtime orchestration.",
+      "Auto-layout engines scale poorly, turning maps with >30 nodes into complex visual webs.",
+      "Zero underlying transactional meta-attributes are native to standard flowchart shapes."
+    ],
+    "renderingBestPractices": [
+      "Always default to Flowchart TD (Top-Down) for human operations to maximize reading orientation.",
+      "Isolate layout structure declarations at the top of code blocks and place styling classes at the bottom.",
+      "Enforce standard node bracket rules: ([ pill ]) for events, [ rect ] for tasks, and { diamond } for gateways.",
+      "Incorporate the Mermaid Live Editor base64 URL schema block for platforms lacking native markdown parsing."
+    ]
+  },
+
+  "section5_sovereign_file_based_process_library": {
+    "repositoryArchitecture": {
+      "templateDirectory": "Standardized blank baselines ensuring baseline capture structure conformity.",
+      "domainDirectory": "Organized around structural business domains instead of changing organizational chart departments.",
+      "fileCoupling": "Each process node directory holds a human-readable process.md, a machine-parseable manifest.json, and an artifacts/ subfolder."
+    },
+    "lifecycleStates": {
+      "DRAFT": "Active development branch; layout is under analysis and contains no enterprise authority.",
+      "ACTIVE": "Fully approved by the designated Process Owner and merged into the protected repository main branch.",
+      "ARCHIVED": "Decommissioned historical flows, segregated away from active AI knowledge search indexing parameters."
+    },
+    "strategicAdvantages": {
+      "aiReadiness": "Acts as an optimal RAG ingestion source. Formats block text perfectly for LLM chunking patterns and metadata tracking.",
+      "vendorExitStrategy": "Decouples structural institutional logic from third-party vendor interfaces. Prevents lock-in by maintaining system schemas, instructions, and exception pathways in open formats independent of execution tools."
+    }
+  },
+
+  "section6_ai_tutor_and_librarian_system_prompts": {
+    "operationalGuardrails": [
+      {
+        "scope": "BPMN AI Tutor Context",
+        "instruction": "Enforce sequential user input steps. Reject demands to draw a full multi-system process map before step narrative, roles, and boundaries are confirmed."
+      },
+      {
+        "scope": "Complexity Capping",
+        "instruction": "Restrict system generated Mermaid shapes to Level 1 BPMN equivalent parameters unless explicitly modified by an advanced flag override."
+      },
+      {
+        "scope": "Proactive Exit Strategy Auditing",
+        "instruction": "Scan user inputs for vendor-specific AI elements. If found, generate a mandatory warning prompt requiring the entry of a manual or open-source fallback configuration step."
+      },
+      {
+        "scope": "Scope Creep Intervention",
+        "instruction": "Intervene if system parameters and worker actions mix on a baseline layer. Extract the tech data out to a separate architectural notepad view dynamically."
+      }
+    ]
+  },
+
+  "sourceReferences": [
+    "Silver, B. (BPMN Method and Style) - Core structural subset modeling parameters.",
+    "Camunda Whitepapers - Industrial AI orchestration patterns and workflow architecture rules.",
+    "Dumas, M., et al. (Fundamentals of Business Process Management) - Baseline operational lifecycle documentation.",
+    "Morgan Lewis Strategic Legal Review (2026) - AI deployment exit protocols and transition deliverables.",
+    "Digital Operational Resilience Act (DORA) - Article 28 exit requirements for regulated services.",
+    "EU AI Act Guidelines - Algorithmic evaluation audit trail logging rules."
+  ]
+}
+
+```
