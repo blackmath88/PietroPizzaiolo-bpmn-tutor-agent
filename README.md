@@ -4,6 +4,12 @@
 
 Pietro started as a pizza-based BPMN tutoring prompt. The repository now also contains a runnable German-language university pilot: `docs/unibas/`.
 
+## Concept and execution
+
+- [Concept: Prozesse sichtbar machen](planning/CONCEPT.md)
+- [Build plan and next acceptance criteria](planning/BUILD_PLAN.md)
+- [Execution, deployment status and pilot sequence](planning/EXECUTION.md)
+
 ## Run in one command
 
 Requires Node.js 22 or later. No npm dependencies, build step or API key required for the process workbench.
