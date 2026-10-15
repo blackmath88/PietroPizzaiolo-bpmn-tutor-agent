@@ -2,8 +2,11 @@
 
 ## Aktueller Bauauftrag
 
-Der GitHub-Pages-/JSON-MVP gemäss [Buildplan](BUILD_PLAN.md) und [Claude-Code-Handoff](CLAUDE_CODE_HANDOFF.md) ersetzt den früheren E1-Auftrag unten. Ältere Deployment-Angaben sind historische Nachweise und vor Nutzung neu zu prüfen. Keine neue Laufzeit gestartet.
+**Stand 15. Oktober 2026: MVP implementiert auf Branch `claude/admiring-wright-cd5d4z` (PR zur Prüfung, nicht gemergt).** Umgesetzt gemäss [Claude-Code-Handoff](CLAUDE_CODE_HANDOFF.md): Navigation Lernen / Mein Prozess / Prozessbibliothek, sieben Lernübungen, geführte Aufnahme mit Vorschlagsvorschau, Übernehmen/Bearbeiten/Verwerfen und Rückgängig, deterministischer Prozess-Check mit Schrittbezug, JSON-Bibliothek mit drei fiktiven Beispielen und zwei Mustern, Vergleich über Tags, Beitragskopie als Download mit Status «Prüfung ausstehend». Validator `npm run validate:library` läuft in CI.
 
+Nachweise: `npm run validate:library`, `npm test` (Unit-Tests), `npm run test:browser` (18 Browserprüfungen inkl. Repository-Präfix, 390 px, Fehlerfälle; Provider gemockt). Kein Live-Mistral-Test, keine Spracheingabe, keine zentrale Ablage. GitHub Pages ist nach Merge erneut zu prüfen; die öffentliche URL ist nicht als live bestätigt.
+
+Offen nach dem MVP: Pages-Aktivierung prüfen, Pilotfälle auswählen, Kuration benennen, Entscheid über strukturierte KI-Vorschläge (gleicher Vorschlagsvertrag wie offline) und selbst betriebene Ablage.
 
 ## Aktualisierung: Expertise und Prozesskompetenz zuerst
 
