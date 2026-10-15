@@ -1,5 +1,16 @@
 # Wie läuft’s bei euch? — Kampagne und Skalierung
 
+## Aktualisierung: Expertise und Prozesskompetenz zuerst
+
+Die Konzeptentscheidung vom 15. Oktober 2026 priorisiert **individuelle Expertise → gemeinsame Prozesssprache → gemeinsame Prozessbibliothek → organisationales Prozessökosystem**. Massgeblich sind [Konzept](CONCEPT.md) und [Forschungssynthese](../research/RESEARCH_SYNTHESIS.md).
+
+Der Einstieg ist ein digitaler Prozesscoach mit Lernen im eigenen Fall, wenigen kuratierten Beispielen und freiwilliger Beitragsmöglichkeit. Eine eigene Taskforce ist optionaler späterer Ausbau. Verweise auf Taskforce und betreute Verbesserungsversuche unten beschreiben diese Ausbauoption; sie sind keine Voraussetzung des ersten Coach-Piloten. Rollen können mit ausdrücklich freigegebenen Kapazitäten besetzt werden.
+
+Vor dem Ausbau der Verbesserungsfälle: gemeinsame Begriffe im Dialog erklären, zwei fiktive Fälle mit gemeinsamem Muster und lokalen Unterschieden zeigen, Kategoriezuordnungen korrigierbar halten und die Übergabe vom privaten Entwurf zum geprüften Beitrag beschreiben. Eine zentrale Sammlung wird erst nach Klärung von Ablage und Pflege implementiert.
+
+Pilot zusätzlich auf Lerntransfer ohne Tutor, Verständnis durch ein anderes Team und Gesamtaufwand gegenüber einem geführten Formular prüfen. Für die schlankere Variante ein eigenes begrenztes Budgetblatt erstellen; frühere Aufwandsszenarien sind keine Finanzierung. Kostenstelle, Kapazität und Sachkostenlimit bleiben zu vereinbaren.
+
+
 Stand: 15. Oktober 2026. Konzept, noch keine implementierte Sammlung oder laufende Kampagne.
 
 **Einladung:** Arbeit sichtbar machen. Gute Lösungen teilen.

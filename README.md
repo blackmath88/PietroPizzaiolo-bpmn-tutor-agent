@@ -1,18 +1,25 @@
 # Pietro Pizzaiolo · Process Mapping Lab
 
-**Prozesse sichtbar machen. Erst die Arbeit verstehen, dann Verbesserungen und KI-Anwendungsfälle finden.**
+**Expertise verbinden. Gemeinsam besser arbeiten.**
+
+Vision: individuelle Expertise → gemeinsame Prozesssprache → gemeinsame Prozessbibliothek → organisationales Prozessökosystem.
 
 Pietro started as a pizza-based BPMN tutoring prompt. The repository now also contains a runnable German-language university pilot: `docs/unibas/`.
 
 ## Concept and execution
 
-- [Concept: Prozesse sichtbar machen](planning/CONCEPT.md)
+**Next implementation:** [Claude Code — complete MVP handoff](planning/CLAUDE_CODE_HANDOFF.md). GitHub Pages + versioned JSON library; no external database required. This is planned work, not a claim that the library already exists.
+
+
+- [Concept: Expertise verbinden](planning/CONCEPT.md)
 - [Build plan and next acceptance criteria](planning/BUILD_PLAN.md)
 - [Execution, deployment status and pilot sequence](planning/EXECUTION.md)
 
 - [Campaign and scaling concept](planning/CAMPAIGN_AND_SCALING.md)
 - [Prior-art scout](research/PRIOR_ART_SCOUT.md)
 - [Perplexity Deep Research prompt](research/PERPLEXITY_RESEARCH_PROMPT.md)
+
+- [Research synthesis: useful findings, evidence limits and design decisions](research/RESEARCH_SYNTHESIS.md)
 
 ## Run in one command
 

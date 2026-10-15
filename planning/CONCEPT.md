@@ -1,59 +1,90 @@
-# Prozesse sichtbar machen — Konzept
+# Expertise verbinden. Gemeinsam besser arbeiten.
 
-Stand: 15. Oktober 2026. Vorschlag von Achim Imboden; keine institutionelle Beauftragung oder Freigabe.
+Stand: 15. Oktober 2026. Konzeptvorschlag von Achim Imboden, keine institutionelle Beauftragung oder Budgetfreigabe.
 
-## Leitidee
+## Vision: Individuelle Expertise institutionell verankern
 
-Prozessverbesserung und die Suche nach KI-Anwendungsfällen beginnen mit denselben Fragen: Was soll erreicht werden? Wie läuft die Arbeit tatsächlich? Wer entscheidet? Welche Informationen werden benötigt? Wo entsteht Reibung?
+Die Universität verfügt über grosse fachliche Expertise und individuelle Exzellenz. Viel Wissen darüber, wie Arbeit gelingt, liegt bei einzelnen Menschen und Teams. Eine gemeinsame Prozesssprache macht dieses Wissen über den eigenen Arbeitskontext hinaus verständlich, vergleichbar und wiederverwendbar.
 
-Pietro macht diese Fragen für Mitarbeitende zugänglich. Aus einer Alltagserzählung entsteht eine gemeinsam prüfbare Prozessbeschreibung. Eine Taskforce hilft beim Validieren und Umsetzen ausgewählter Verbesserungen. Bestätigte Beschreibungen können zu einem gepflegten Prozessatlas wachsen.
+Menschen lernen diese Sprache an ihrer eigenen Arbeit. Sie müssen keinen Methodenkurs abschliessen, bevor sie Verbesserungen anstossen können. Gemeinsame Begriffe für Auslöser, Ergebnis, Tätigkeit, Entscheidung, Rolle, Übergabe und Ausnahme helfen, Muster zu erkennen und fachlich notwendige Unterschiede zu erklären.
 
-**Pitch:** Wir machen die Arbeit sichtbar, damit Menschen sie gemeinsam verbessern können — und damit KI dort eingesetzt wird, wo sie tatsächlich hilft.
+**Leitsatz:** Wissen aus einzelnen Köpfen für die Institution nutzbar machen.
 
-## Drei Ebenen
+Individuelle Expertise institutionell verankern bedeutet: Erfahrungswissen wird gemeinsam beschreibbar, auffindbar und weiterentwickelbar. Menschen behalten ihre fachliche Urheberschaft und ihren Kontext; die Institution gewinnt Wissen, auf das andere aufbauen können. Die gemeinsame Prozesssprache ist das verbindende Mittel, die Prozessbibliothek das wachsende Gedächtnis und das Prozessökosystem die langfristige Perspektive.
 
-| Ebene | Aufgabe | Ergebnis | Verantwortung |
-| --- | --- | --- | --- |
-| Pietro / Prozesswerkbank | Lernen, erzählen, strukturieren, hinterfragen | Persönlicher Arbeitsentwurf mit offenen Fragen | Mitarbeitende, begleitet durch Tutor oder Moderation |
-| Taskforce | Validieren, priorisieren, erproben, Wirkung messen | Eingeführte Verbesserung oder begründeter Verzicht | Prozessverantwortliche mit Prozess-/Change- und IT-Kompetenz |
-| Prozessatlas | Bestätigtes Wissen auffindbar und wiederverwendbar halten | Versionierte Prozessbeschreibungen und Verbesserungserfahrungen | Benannte fachliche Verantwortliche und zuständige Ablagebetreuung |
+## Jury-Pitch
 
-Der Atlas ist ein späterer Ausbauschritt. Die jetzige App besitzt keine zentrale Datenbank. GitHub hostet den öffentlichen Demonstrator und seinen Quellcode; reale interne Prozessbeschreibungen benötigen eine dafür geeignete, abgestimmte Ablage.
+Wer Prozesse verbessern möchte, muss sie verstehen. Unsere Universität verfügt über enorme Expertise – auch darüber, wie Arbeit im Alltag gelingt. Dieses Wissen ist häufig an einzelne Personen und Teams gebunden.
 
-## Nutzungserlebnis
+Pietro hilft, daraus gemeinsam nutzbares Wissen zu machen. Als digitaler Prozesscoach vermittelt er eine verständliche Prozesssprache und begleitet Mitarbeitende dabei, eigene Abläufe zu beschreiben und zu hinterfragen. Lernen und Anwenden gehen dabei Hand in Hand.
 
-1. **Ankommen:** «Zeig mir eine Aufgabe, die du regelmässig machst.» Wahl zwischen Pizzabeispiel, Hochschulbeispiel und eigenem Vorgang.
-2. **Erzählen:** Die Person beschreibt einen echten Fall. Pietro fragt jeweils nach einer relevanten Lücke, statt Fachbegriffe oder ein vollständiges Modell vorauszusetzen.
-3. **Perspektive wählen:** Arbeitsalltag, Anfragende, Entscheidungen oder Informationsfluss. Die Perspektive verändert Hervorhebungen und Rückfragen, nicht stillschweigend den berichteten Ablauf.
-4. **Entwurf prüfen:** Auslöser, Ergebnis, Rollen, Tätigkeiten, Entscheidungen und Ausnahmen werden als Vorschlag sichtbar. Annahmen bleiben erkennbar. Änderungen benötigen eine bewusste Übernahme.
-5. **Potenzial finden:** Weglassen, vereinfachen, vorhandene Lösung übernehmen, regelbasiert automatisieren oder KI unterstützen lassen. Jede Idee wird als Hypothese mit Messgrösse formuliert.
-6. **Im Team validieren:** Beteiligte prüfen Ablauf und Ausnahmen. Ein Selbstcheck und eine KI-Antwort gelten nicht als fachliche Freigabe.
-7. **Weitergeben:** Ein portabler Fallsteckbrief geht in die gemeinsame Prüfung. Fortschritt endet nicht beim Export, sondern bei Umsetzung und Nachmessung.
+Aus freiwillig geteilten und geprüften Beispielen wächst eine gemeinsame Prozessbibliothek. Mitarbeitende finden verwandte Aufgaben, vergleichen Vorgehensweisen und passen bewährte Lösungen an ihren Kontext an. So kann individuelle Expertise über ihren ursprünglichen Einsatzort hinaus wirken.
 
-## Was KI beiträgt
+Langfristig entsteht ein organisationales Prozessökosystem: Menschen, Prozessbeschreibungen, Methoden und praktische Lösungen werden miteinander verbunden. Es schafft eine Grundlage für bessere Zusammenarbeit, gezielte Effizienzgewinne und fundierte Entscheidungen über Automatisierung und KI.
 
-Mistral soll Fragen stellen, ungeordnete Erzählungen strukturieren, Widersprüche benennen und mögliche Verbesserungen vorschlagen. Ein strukturiertes Prozessmodell bleibt die Grundlage für Editor, Karte und Export. Das Modell zeichnet nicht selbst beliebiges HTML oder ausführbaren Diagrammcode.
+## Drei aufeinander aufbauende Leistungen
 
-Das Gespräch ist eine Eingabemethode neben manueller Bearbeitung. Die App bleibt ohne KI brauchbar. Anbieterzugang, Modellversion, Datenverarbeitung und Kosten sind eigenständige Betriebsentscheidungen.
+| Leistung | Konkreter Nutzen | Erste Umsetzung |
+| --- | --- | --- |
+| Gemeinsame Prozesssprache | Arbeit erklären, Fragen stellen, Schnittstellen verstehen | Kurze Lernschritte und Beispiele, direkt in die Aufnahme eingebettet |
+| Gemeinsame Prozessbibliothek | Verwandte Fälle finden, Wissen erhalten, gute Lösungen anpassen | Kleine kuratierte Sammlung mit Herkunft, Kontext und Pflegeverantwortung |
+| Organisationales Prozessökosystem | Erfahrung zwischen Einheiten übertragen und Verbesserungen verbinden | Beziehungen zwischen Fällen, Familien, Varianten, Mustern und zuständigen Menschen |
 
-## Was «AI readiness» hier bedeutet
+Das Ökosystem ist die Entwicklungsrichtung. Der Einstieg ist ein nützlicher Coach mit wenigen Beispielen und portablen Ergebnissen. Eine eigene Taskforce ist keine Voraussetzung; gezielte Moderation kann bestehende Angebote ergänzen. Ein dauerhafter Verbesserungsservice wäre ein späterer, separat zu begründender Entscheid.
 
-Eine prüfbare Sammlung von Voraussetzungen: Zweck, Verantwortung, bestätigter Ablauf, bekannte Ausnahmen, Datenquellen, zulässige Nutzung, Qualitätskontrolle und Ausgangsmessung. Jeder Punkt kann erfüllt, nicht erfüllt oder unbekannt sein und später mit Belegen verknüpft werden. Kein pauschaler Prozentwert und keine automatische Einsatzfreigabe.
+## Nutzung: Lernen → Anwenden → Vergleichen → Beitragen → Wiederverwenden
 
-## Pilotvorschlag
+1. Eine Person lernt Grundbegriffe anhand eines Hochschulbeispiels oder optional anhand von Pietros Pizzaschule.
+2. Sie beschreibt einen eigenen Vorgang. Pietro fragt nach Grenzen, Rollen, Entscheidungen, Übergaben und Ausnahmen.
+3. Ein strukturierter Entwurf wird sichtbar; Annahmen und offene Fragen bleiben erkennbar. Die Person korrigiert und übernimmt Vorschläge bewusst.
+4. Vergleichbare Beispiele zeigen gemeinsame Tätigkeitsmuster und unterschiedliche fachliche Voraussetzungen.
+5. Verbesserungsideen werden als Hypothesen getrennt vom tatsächlichen Ablauf festgehalten.
+6. Die Person entscheidet, ob sie eine bereinigte Beschreibung beitragen möchte. Beteiligte prüfen den Ablauf; eine benannte Kuration prüft die Eignung für die Sammlung.
+7. Ein anderes Team prüft die Wiederverwendung und dokumentiert Anpassungen oder begründete Nichtübernahme.
 
-Zwölf Wochen, drei freiwillige Teams, je ein begrenzter Prozess. Die konkrete Auswahl und die verfügbaren Kapazitäten sind noch offen. Zuerst die statische Werkbank verwenden; optional einen geeigneten KI-Fall nach Klärung von Betrieb und Daten behandeln. Mindestens eine Verbesserung soll bei einer zweiten Einheit auf Übertragbarkeit geprüft werden.
+Privater Entwurf → freiwilliger Beitrag → fachliche Prüfung und Kuration → geteiltes Beispiel. Ein Chat wird niemals automatisch institutionelles Wissen.
 
-Erfolg misst sich an verständlichen und bestätigten Karten, nutzbaren Verbesserungshypothesen, eingeführten Änderungen und nachweisbarer Entlastung bei gleichbleibender oder verbesserter Qualität. Aktivitätszahlen wie Chats oder Exporte sind ergänzende Nutzungsdaten, kein Wirksamkeitsnachweis.
+## Abstraktion mit Kontext
 
-## Wirtschaftlichkeit
+Fiktives Beispiel: Ein HR-Antrag und ein Forschungsförderungsantrag können beide Angaben erfassen, Vollständigkeit prüfen, fehlende Informationen nachfordern und Verantwortung übergeben. Gemeinsam ist das Tätigkeitsmuster. Kriterien, Fristen, Datenzugriffe und Entscheidungskompetenzen bleiben fachlich verschieden.
 
-Analyse, Lernzeit, fachliche Prüfung, technische Umsetzung, Einführung, Betrieb und Pflege zählen als Aufwand. Eingesparte Bearbeitungszeit, verringerte Rückfragen und Fehler werden anhand einer Ausgangsmessung geprüft. Freie Kapazität und tatsächlich vermiedene Ausgaben werden getrennt ausgewiesen. Eine Kostenneutralität ist heute nicht nachgewiesen; sie ist eine Bedingung für die Pilotentscheidung und Fortführung.
+Fall, Prozessfamilie, lokale Variante, wiederverwendbares Muster und verbindlicher Standard bleiben unterscheidbar. Review, Wirksamkeitsnachweis und institutionelle Autorität sind getrennte Eigenschaften. Häufigkeit oder KI-Zuordnung erzeugen keine Verbindlichkeit.
 
-## Grenzen der ersten Version
+## Technik und Anschlussfähigkeit
 
-Keine vollständige BPMN-2.0-Engine, kein organisationsweites Prozess-Mining, keine autonomen Prozessänderungen, kein automatisches Ausführen von Workflows, keine personenbezogene Leistungsmessung. Kein neuer Hochschul-Account oder offizielles Branding ohne festgelegte Zuständigkeit. Die Pizzametapher ist ein optionaler Einstieg; die eigentliche Arbeit bleibt erwachsen, konkret und fachlich präzise.
+Mistral ist als optionaler Gesprächspartner vorgesehen. Die Oberfläche bleibt unabhängig vom Anbieter und auch manuell nutzbar. Gespräch → validiertes strukturiertes Modell → deterministische Darstellung und Export. KI schlägt vor; Menschen prüfen. Eine vereinfachte Karte wird nicht als formal gültiges BPMN ausgegeben.
 
-## Kampagne und Skalierung
+Für spätere Integration vorzusehen: stabile IDs, Schema-Version, Herkunft, Geltungsbereich, Rollen, Schritte, Verbindungen, Ausnahmen, offene Fragen, Klassifikation und getrennte Prüf-/Autoritätsangaben. JSON dient der portablen Übergabe. Eine freigegebene universitäre Ablage oder bestehende Plattform kann später über eine dokumentierte Schnittstelle angebunden werden. Solche Integrationen sind noch nicht implementiert.
 
-Das ausgearbeitete [Kampagnen- und Skalierungskonzept](CAMPAIGN_AND_SCALING.md) beschreibt Kategorien, Prozessfamilien, lokale Varianten, Wissenstransfer und getrennte Prüf-/Verbindlichkeitsangaben. [Vorabrecherche](../research/PRIOR_ART_SCOUT.md) und [Perplexity-Auftrag](../research/PERPLEXITY_RESEARCH_PROMPT.md) prüfen die Grundlage vor weiteren Architekturentscheidungen.
+GitHub Pages dient dem Demonstrator mit fiktiven Beispielen. Reale interne Beiträge benötigen eine geeignete Ablage und Zugriffsregelung. Live-Mistral benötigt separat geklärten Betrieb, Schlüssel, Datenverarbeitung und Kostenlimit.
+
+## Schlanker Pilot und Wirtschaftlichkeit
+
+Vorschlag: drei freiwillige Teams, je ein kleiner Prozess, höchstens zwölf Wochen. Schwerpunkt: Lernen, verständliche Aufnahme, gezielter Vergleich und mindestens ein Wiederverwendungstest. Einfache Verbesserungen können im lokalen Verantwortungsbereich getestet werden.
+
+Benötigt werden ausdrücklich freigegebene Zeit für fachliche Betreuung/Kuration, technische Betreuung und Mitwirkung. Als organisatorische Anknüpfung kommen bestehende Lern-/KI-Entwicklungsaufgaben und die beteiligten Einheiten infrage; Zuständigkeit und Kostenstelle sind unbestätigt.
+
+Vor Start ein Budgetblatt vereinbaren: einmalige Einrichtung, Lern- und Prüfzeit, wiederkehrende Kuration, Hosting/API, Support und Reserve; jeweils mit Menge, Satz, Obergrenze, Verantwortlichkeit und möglichem Budgetgefäss. Ein bestehendes Budget ersetzt keine Kapazitätsfreigabe. Das frühere 200-Stunden-Szenario für einen betreuten Verbesserungs-Pilot ist keine Zusage und keine Kalkulation dieses schlankeren Coach-Piloten.
+
+Zeitgewinn, freigesetzte Kapazität, Qualitätsgewinn und vermiedene Ausgaben getrennt ausweisen. Kostenneutralität bleibt zu belegen. Skalierung nur bei brauchbaren Ergebnissen, tragfähiger laufender Kostenbilanz und benannter Pflege.
+
+## Erfolgskriterien
+
+- Können Teilnehmende einen neuen Prozess anschliessend selbst erklären und strukturieren?
+- Sind Beschreibungen für fachfremde Kolleginnen und Kollegen verständlich und für Beteiligte zutreffend?
+- Wie viel Zeit benötigen Aufnahme, Korrektur, Prüfung und Pflege gegenüber einem guten Formular ohne KI?
+- Findet ein zweites Team ein Beispiel und kann es dessen Übertragbarkeit begründet beurteilen?
+- Führen erkannte Möglichkeiten zu überprüfbaren Verbesserungen?
+- Werden lokale Praxis, getestete Wirkung und verbindliche Vorgaben korrekt unterschieden?
+
+AI readiness bedeutet hier eine bessere Grundlage zur Prüfung: klarer Zweck, Verantwortung, Daten, Regeln, Ausnahmen, Qualitätsanforderungen und Fehlerfolgen. Prozessbeschreibung allein ist keine Einsatzfreigabe.
+
+## Forschungsgrundlage und weitere Planung
+
+Die [Forschungssynthese](../research/RESEARCH_SYNTHESIS.md) trennt übernommene Gestaltungsideen von noch ungeprüften Quellenbehauptungen. Die bereitgestellten Berichte belegen weder die Neuheit der Kombination noch Einsparungen in Basel.
+
+Siehe [Kampagne und Skalierung](CAMPAIGN_AND_SCALING.md), [Buildplan](BUILD_PLAN.md) und [Ausführung](EXECUTION.md). Deren Aktualisierungshinweise setzen die neue Coach-/Bibliotheks-Priorität; ältere weitergehende Umsetzungsschritte sind Optionen.
+
+## Entscheidung: GitHub-Dateibibliothek für den MVP
+
+Die erste gemeinsame Bibliothek besteht aus kleinen versionierten JSON-Dateien im Repository und wird über GitHub Pages gelesen. Persönliche Entwürfe bleiben lokal. Beiträge werden als Datei exportiert, fachlich geprüft und manuell durch die Kuration aufgenommen. Öffentliche Einträge sind fiktiv oder ausdrücklich zur Veröffentlichung freigegeben. Es gibt keine Schreibzugriffe aus dem Browser auf GitHub. Eine spätere selbst gehostete Ablage kann denselben Datenvertrag übernehmen. Kein zusätzlicher Datenbankanbieter wird für den MVP eingeführt. Live-KI und Spracheingabe benötigen weiterhin einen gesonderten autorisierten Dienst; sie sind keine Voraussetzung für den Offline-MVP.
