@@ -10,6 +10,10 @@ Pietro started as a pizza-based BPMN tutoring prompt. The repository now also co
 - [Build plan and next acceptance criteria](planning/BUILD_PLAN.md)
 - [Execution, deployment status and pilot sequence](planning/EXECUTION.md)
 
+- [Campaign and scaling concept](planning/CAMPAIGN_AND_SCALING.md)
+- [Prior-art scout](research/PRIOR_ART_SCOUT.md)
+- [Perplexity Deep Research prompt](research/PERPLEXITY_RESEARCH_PROMPT.md)
+
 ## Run in one command
 
 Requires Node.js 22 or later. No npm dependencies, build step or API key required for the process workbench.

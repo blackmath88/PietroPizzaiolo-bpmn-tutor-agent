@@ -53,3 +53,7 @@ Analyse, Lernzeit, fachliche Prüfung, technische Umsetzung, Einführung, Betrie
 ## Grenzen der ersten Version
 
 Keine vollständige BPMN-2.0-Engine, kein organisationsweites Prozess-Mining, keine autonomen Prozessänderungen, kein automatisches Ausführen von Workflows, keine personenbezogene Leistungsmessung. Kein neuer Hochschul-Account oder offizielles Branding ohne festgelegte Zuständigkeit. Die Pizzametapher ist ein optionaler Einstieg; die eigentliche Arbeit bleibt erwachsen, konkret und fachlich präzise.
+
+## Kampagne und Skalierung
+
+Das ausgearbeitete [Kampagnen- und Skalierungskonzept](CAMPAIGN_AND_SCALING.md) beschreibt Kategorien, Prozessfamilien, lokale Varianten, Wissenstransfer und getrennte Prüf-/Verbindlichkeitsangaben. [Vorabrecherche](../research/PRIOR_ART_SCOUT.md) und [Perplexity-Auftrag](../research/PERPLEXITY_RESEARCH_PROMPT.md) prüfen die Grundlage vor weiteren Architekturentscheidungen.
