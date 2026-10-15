@@ -2,48 +2,75 @@
 
 **Expertise verbinden. Gemeinsam besser arbeiten.**
 
+**Was Einzelne wissen, soll die Institution können.**
+
 Vision: individuelle Expertise → gemeinsame Prozesssprache → gemeinsame Prozessbibliothek → organisationales Prozessökosystem.
 
 Pietro started as a pizza-based BPMN tutoring prompt. The repository now also contains a runnable German-language university pilot: `docs/unibas/`.
 
 ## Concept and execution
 
-**Next implementation:** [Claude Code — complete MVP handoff](planning/CLAUDE_CODE_HANDOFF.md). GitHub Pages + versioned JSON library; no external database required. This is planned work, not a claim that the library already exists.
-
+The GitHub Pages + versioned JSON library MVP from the [Claude Code handoff](planning/CLAUDE_CODE_HANDOFF.md) is implemented in `docs/unibas/`. No external database, CDN, font or hosting is required.
 
 - [Concept: Expertise verbinden](planning/CONCEPT.md)
-- [Build plan and next acceptance criteria](planning/BUILD_PLAN.md)
-- [Execution, deployment status and pilot sequence](planning/EXECUTION.md)
+- [Build plan](planning/BUILD_PLAN.md) · [Execution and deployment status](planning/EXECUTION.md)
+- [Campaign and scaling concept](planning/CAMPAIGN_AND_SCALING.md) · [Prior-art scout](research/PRIOR_ART_SCOUT.md) · [Research synthesis](research/RESEARCH_SYNTHESIS.md)
 
-- [Campaign and scaling concept](planning/CAMPAIGN_AND_SCALING.md)
-- [Prior-art scout](research/PRIOR_ART_SCOUT.md)
-- [Perplexity Deep Research prompt](research/PERPLEXITY_RESEARCH_PROMPT.md)
+## Run locally
 
-- [Research synthesis: useful findings, evidence limits and design decisions](research/RESEARCH_SYNTHESIS.md)
-
-## Run in one command
-
-Requires Node.js 22 or later. No npm dependencies, build step or API key required for the process workbench.
+Requires Node.js 22 or later. No API key is needed.
 
 ```sh
-npm start
+npm ci                      # only needed for the browser test (Playwright)
+npm start                   # http://localhost:3000/unibas/
+npm run validate:library    # validates docs/unibas/data
+npm test                    # unit tests (model, library, review, guidance, storage, contribution, server)
+npm run test:browser        # end-to-end in Chromium; needs `npx playwright install chromium`
 ```
 
-Open http://localhost:3000/unibas/ . `npm test` runs the model and backend tests.
-
-The browser app also works on any static HTTP host, including GitHub Pages. No external fonts, scripts, analytics or CDN are loaded. Editing is in memory until the user explicitly saves to browser storage or exports a file.
+If a pre-installed Chromium is used instead of a Playwright download, set `PW_CHROMIUM_PATH=/path/to/chrome`. The browser test serves a copy of `docs/` below an arbitrary repository prefix and writes desktop/mobile screenshots to `test-results/`.
 
 ## What works
 
-- Three brief pizza lessons: events/tasks, exclusive decisions and parallel-work concepts.
-- Process scope, perspective, roles, tools, pain points and editable steps.
-- Explicit yes/no branches and rework loops on an SVG process map.
-- Improvement hypotheses: remove, simplify, automate, or support with AI.
-- Readiness questions with explicit unknown states, not a synthetic readiness score.
-- JSON import/export, Markdown process record and Mermaid diagram export.
-- Optional device-local saving; optional Mistral conversation via a separate backend.
+Primary navigation: **Lernen | Mein Prozess | Prozessbibliothek**; entry actions *Beispiel ausprobieren*, *Eigenen Prozess beschreiben*, *Bibliothek erkunden*. User-facing text is German (Swiss spelling).
 
-These are simplified process maps, **not validated BPMN 2.0 models**. Parallel gateways are explained but are not supported in the editor. Example processes are fictional. The Uni edition is a proposal by Achim Imboden, not an official University of Basel service. No university account, logo, policy approval or shared process database is implied.
+- **Lernen:** seven short exercises (Auslöser, Tätigkeit, Entscheidung, Rolle, Übergabe, Ergebnis, Ausnahme), each with a university and an optional pizzeria example and an explanation for every answer. No course gate; every exercise links into one's own process.
+- **Mein Prozess – Ablauf:** guided questions (one at a time) or direct structured editing. Each guided answer becomes a proposal that is previewed and then accepted, edited or rejected; accepted changes are undoable. *Beispiel ausprobieren* runs a clearly labelled prepared script (not AI). Free narrative is kept as a note and never presented as understood. Map plus readable text alternative; completeness shown as a checklist, not a score. Speech input is deliberately absent (explained in the UI).
+- **Prozess-Check:** deterministic rules separate reported facts, open questions and improvement hypotheses, each citing step IDs or fields (clickable). Loops are questioned, not judged as waste. No time savings, compliance verdicts or institutional rules are generated. Markdown sparring report export.
+- **Vergleich:** classify the draft by family/tags (with an optional keyword-rule suggestion shown as an evidence-backed proposal); related entries are ranked by shared tags, with an explicit note that this is deterministic tag matching.
+- **Mitnehmen / Beitragen:** v1 JSON (re-importable; workbench extras ride in an extra field that older importers ignore), Markdown, Mermaid, sparring report; explicit local save/delete with understandable quota/corruption/unavailable messages. Contribution: separate redactable copy, exact JSON preview, explicit sharing confirmation, download of envelope + Markdown with status *pending-review*. No network write, no "submitted/published" message, no tokens/settings/chat in the export.
+- **Prozessbibliothek:** three fictional university examples (onboarding with missing-information loop, event announcement, research-funding request) and two pattern cards (completeness check before handover; explicit handover). Search, family/activity/kind filters, empty and error states. Detail view shows context, provenance, and review / effectiveness / authority as separate fields, map, local differences, open questions, related patterns, comparison and *Als eigenen Entwurf verwenden* (with a protecting dialog and undo).
+- Optional live Mistral chat via the separately hosted server is unchanged and clearly separate: its replies are text and never modify the draft.
+
+These are simplified process maps, **not validated BPMN 2.0 models**. All library examples are fictional, not reviewed, not tested for effect and not binding. The Uni edition is a proposal by Achim Imboden, not an official University of Basel service.
+
+## Data and architecture
+
+```
+docs/unibas/
+  index.html  style.css  app.js  model.js (v1 process model, unchanged contract)
+  lib/storage.js       static read-only library adapter + browser draft store
+  lib/library.js       validation, search, categories, comparison, keyword suggestions
+  lib/review.js        deterministic Prozess-Check and Markdown report
+  lib/guidance.js      guided questions, prepared script, proposal preview/apply, undo history
+  lib/ai.js            offline AI adapter boundary (proposeProcess / suggestReflection / suggestClassification)
+  lib/contribution.js  contribution copy, envelope, Markdown; no network write
+  lib/map.js lib/dom.js lib/lessons.js
+  data/library-index.json  data/taxonomy.json  data/processes/*.json  data/patterns/*.json
+schemas/library-entry.schema.json  schemas/contribution.schema.json   (contract documentation)
+scripts/validate-library.mjs                                         (dependency-free validator, run in CI)
+```
+
+The index lists only IDs, kinds and relative paths; each entry has exactly one authoritative file. All data is loaded through relative URLs, so the app works below any Pages repository prefix. All untrusted text is rendered via `textContent` or escaped markup.
+
+### Adding a curated entry
+
+1. Receive a contribution JSON (`beitrag-….json`) and its Markdown from a contributor.
+2. Have the involved roles review the content for its stated context.
+3. Copy `candidateEntry` to `docs/unibas/data/processes/<id>.json`, adjust `id`, classification, `relatedIds`/`patternIds`, `maintenance`, and set `review` only for a review that actually happened. Effectiveness and authority stay independent and need evidence/sources.
+4. Add `{id, kind, path}` to `library-index.json`, run `npm run validate:library`, open a PR.
+
+Only fictional or explicitly publication-approved content belongs in this public repository.
 
 ## GitHub Pages
 
