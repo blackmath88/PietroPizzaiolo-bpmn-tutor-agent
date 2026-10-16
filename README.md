@@ -1,6 +1,16 @@
+<!-- BEGIN public-repo-header -->
+<div align="center">
+
 # Pietro Pizzaiolo · Process Mapping Lab
 
 **Expertise verbinden. Gemeinsam besser arbeiten.**
+
+<a href="https://github.com/blackmath88/PietroPizzaiolo-bpmn-tutor-agent"><img alt="Primary language: JavaScript" src="https://img.shields.io/badge/language-JavaScript-526078?style=flat"></a>
+<a href="https://github.com/blackmath88/PietroPizzaiolo-bpmn-tutor-agent/tree/main/docs"><img alt="Documentation" src="https://img.shields.io/badge/docs-guide-16796f?style=flat"></a>
+<a href="https://github.com/blackmath88/PietroPizzaiolo-bpmn-tutor-agent/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/blackmath88/PietroPizzaiolo-bpmn-tutor-agent?style=flat&amp;color=737373"></a>
+
+</div>
+<!-- END public-repo-header -->
 
 Vision: individuelle Expertise → gemeinsame Prozesssprache → gemeinsame Prozessbibliothek → organisationales Prozessökosystem.
 
